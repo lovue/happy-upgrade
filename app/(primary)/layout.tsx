@@ -9,6 +9,7 @@ const projects: {
   { name: 'Vite', value: 'vite' },
   { name: 'Stylelint', value: 'stylelint' },
   { name: 'DOMPurify', value: 'dompurify' },
+  { name: 'Helmet', value: 'helmet' },
 ]
 
 export default function PrimaryLayout({ children }: { children: React.ReactNode }) {
