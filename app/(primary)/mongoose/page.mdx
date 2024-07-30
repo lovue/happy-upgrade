@@ -1,0 +1,20 @@
+# [Mongoose](https://github.com/Automattic/mongoose/releases)
+
+## 6.0 → 7.0 (2023-02-27)
+
+**Changes**
+
+- copy schema options when merging schemas using `new Schema()` or `Schema.prototype.add()`
+- remove support for callbacks
+- upgrade to MongoDB node driver 5.x, bson 5.x
+- make `strictQuery: false` by default
+- remove support for setting schema path definitions to primitives, except _`id: false`
+- discriminator schemas now inherit base schema options by default
+- `orFail()` now throws on `updateOne()` and `updateMany()` if `matchedCount === 0`, not `modifiedCount === 0`
+- remove support for custom promise libraries
+- `select('name -path')` behaves as `select('name')` if path has schema-level `select: true`
+- remove support for document interfaces that extends Document
+- pluralize `human` as `humans`, not `humen`
+- renamed schema option `supressReservedKeysWarning` -> `suppressReservedKeysWarning`
+- remove unused `DisconnectedError`
+- remove unsupported query options `maxScan` and `snapshot`

@@ -11,6 +11,7 @@ const projects: {
   { name: 'DOMPurify', value: 'dompurify' },
   { name: 'Helmet', value: 'helmet' },
   { name: 'ESLint', value: 'eslint' },
+  { name: 'Mongoose', value: 'mongoose' },
 ]
 
 export default function PrimaryLayout({ children }: { children: React.ReactNode }) {
