@@ -10,6 +10,7 @@ const projects: {
   { name: 'Stylelint', value: 'stylelint' },
   { name: 'DOMPurify', value: 'dompurify' },
   { name: 'Helmet', value: 'helmet' },
+  { name: 'ESLint', value: 'eslint' },
 ]
 
 export default function PrimaryLayout({ children }: { children: React.ReactNode }) {
