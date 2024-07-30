@@ -1,0 +1,50 @@
+# Vite
+
+## 4.0 → 5.0 (2023-11-16)
+
+**Changes**
+
+- Now uses Rollup 4.
+- Add isPreview to ConfigEnv and resolveConfig.
+- Remove `resolve.browserField`.
+- Remove `server.force`.
+- Deprecated CommonJS Node.js API.
+- Remove `import.meta.globEager`.
+- Remove CSS default export.
+- Use `import.meta.url` instead of `self.location`.
+- Manifest files are now generated in `.vite` directory by default.
+- CLI shortcuts require pressing `Enter`.
+
+**Code update**
+
+Add `"type": "module"` in `package.json`.
+
+```js
+import.meta.globEager('*')
+
+//↓↓↓
+
+import.meta.glob('*', { eager: true })
+```
+
+---
+
+## 3.0 → 4.0 (2022-12-09)
+
+**Changes**
+
+- Now uses Rollup 3.
+- `@vitejs/plugin-vue` and `@vitejs/plugin-react` have been moved out of vite.
+- Now React plugin uses SWC during development.
+- Modern build now targets `safari14` by default.
+- Import CSS as a string without emitting `.css` file.
+
+**Code update**
+
+```js
+import cssString from './global.css'
+
+//↓↓↓
+
+import cssString from './global.css?inline'
+```

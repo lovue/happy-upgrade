@@ -1,4 +1,9 @@
 .layout-primary {
+  .layout-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
   .sidebar-items {
     .status--active {
       color: var(--blue-color);
