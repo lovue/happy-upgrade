@@ -1,6 +1,6 @@
 # Vue
 
-## 3.3 -> 3.4 (2023-12-28)
+## 3.3 → 3.4 (2023-12-28)
 
 **Changes**
 
@@ -28,3 +28,82 @@ Update `tsconfig.json` if using tsx.
   "jsxImportSource": "vue"
 }
 ```
+
+```html
+<img :id="id" :src="src">
+↓↓↓
+<img :id :src>
+```
+
+```html
+<div v-is="dynamic-component-name" />
+↓↓↓
+<div is="vue:dynamic-component-name" />
+```
+
+---
+
+## 3.2 → 3.3 (2023-05-11)
+
+**Changes**
+
+- Imported and complex types support in macros.
+- Generic components.
+- More ergonomic `defineEmits`.
+- Typed slots with `defineSlots`.
+- `defineModel`.
+- `defineOptions`.
+- Reactive props destructure.
+- Add `jsxImportSource` in `tsconfig.json`.
+
+**Code update**
+
+```ts
+interface Props {}
+
+defineProps<Props>()
+
+//↓↓↓
+
+import type { Props } from './foo'
+
+defineProps<Props>()
+```
+
+```ts
+const emit = defineEmits<{
+  (e: 'foo', id: number): void
+  (e: 'bar', name: string, ...rest: any[]): void
+}>()
+
+//↓↓↓
+
+const emit = defineEmits<{
+  foo: [id: number]
+  bar: [name: string, ...rest: any[]]
+}>()
+```
+
+---
+
+## 3.1 → 3.2 (2021-08-05)
+
+**Changes**
+
+- `<script setup>`.
+- `<style> v-bind`.
+- Create native Web Components with `defineCustomElement`.
+- Effect Scope API.
+- Server-side rendering.
+
+---
+
+## 3.0 → 3.1 (2021-06-08)
+
+**Changes**
+
+- Add `app.config.compilerOptions`.
+- Add `<div is="vue:xxx>`.
+- Deprecate `app.config.isCustomElement`.
+- Deprecate `delimiters` component option.
+- Deprecate `v-is`.

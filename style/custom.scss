@@ -80,7 +80,7 @@ body {
   }
 
   pre[data-language] {
-    @apply rounded-md p-3;
+    @apply rounded-md p-3 mb-4;
   }
 
   code:not([data-language]) {
