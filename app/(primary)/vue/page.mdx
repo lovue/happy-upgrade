@@ -1,0 +1,30 @@
+# Vue
+
+## 3.3 -> 3.4 (2023-12-28)
+
+**Changes**
+
+- Rewrote the template parser, with 2x faster parser and improved SFC build performance.
+- Refactor the reactivity system, making it more efficient.
+- `defineModel` is now stable.
+- `v-bind` same-name shorthand.
+- Improved hydration mismatch errors.
+- Error code and compile-time flag reference.
+- Removed global JSX namespace.
+- Removed reactivity transform.
+- Removed `app.config.unwrapInjectedRef`.
+- Removed `v-is` directive.
+- Removed `@vnodexxx` event listeners.
+- MathML support.
+
+**Code update**
+
+Upgrade packages: `Volar/vue-tsc@^1.8.27, @vitejs/plugin-vue@^5.0.0, nuxt@^3.9.0, vue-loader@^17.4.0`.
+
+Update `tsconfig.json` if using tsx.
+
+```json
+{
+  "jsxImportSource": "vue"
+}
+```
