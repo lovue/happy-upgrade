@@ -7,6 +7,7 @@ const projects: {
 }[] = [
   { name: 'Vue', value: 'vue' },
   { name: 'Vite', value: 'vite' },
+  { name: 'Stylelint', value: 'stylelint' },
 ]
 
 export default function PrimaryLayout({ children }: { children: React.ReactNode }) {
