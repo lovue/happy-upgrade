@@ -8,6 +8,7 @@ const projects: {
   { name: 'Vue', value: 'vue' },
   { name: 'Vite', value: 'vite' },
   { name: 'Stylelint', value: 'stylelint' },
+  { name: 'DOMPurify', value: 'dompurify' },
 ]
 
 export default function PrimaryLayout({ children }: { children: React.ReactNode }) {
