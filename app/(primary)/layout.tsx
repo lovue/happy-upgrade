@@ -12,6 +12,7 @@ const projects: {
   { name: 'Helmet', value: 'helmet' },
   { name: 'ESLint', value: 'eslint' },
   { name: 'Mongoose', value: 'mongoose' },
+  { name: 'pnpm', value: 'pnpm' },
 ]
 
 export default function PrimaryLayout({ children }: { children: React.ReactNode }) {

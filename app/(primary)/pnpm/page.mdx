@@ -1,0 +1,31 @@
+# [pnpm](https://github.com/pnpm/pnpm/releases)
+
+## 8.0 → 9.0 (2024-04-16)
+
+**[Changes](https://github.com/pnpm/pnpm/releases/tag/v9.0.0)**
+
+- Drop support for Node.js v16 and v17.
+- Now will check `packageManager` in `package.json`.
+- `dedupe-injected-deps`, `hoist-workspace-packages` and `enable-pre-post-scripts` are enabled by default.
+- `link-workspace-packages` is disabled by default.
+- Lockfile v9.
+- New `pnpm completion [shell]`.
+- Now can install a subdirectory from a git repository.
+- `node-gyp` v10.
+- PowerShell completion support.
+- Support `node-options` in `.npmrc`.
+- Support for registry-scoped SSL configurations.
+- New field `ignoredOptionalDependencies`.
+- The checksum of `.pnpmfile.cjs` is saved into the lockfile.
+- Cache for `pnpm dlx`.
+
+## 7.0 → 8.0 (2023-03-28)
+
+**[Changes](https://github.com/pnpm/pnpm/releases/tag/v8.0.0)**
+
+- Drop support for Node.js v14.
+- `auto-install-peers`, `dedupe-peer-dependents`, `resolve-peers-from-workspace-root` and `publishConfig.linkDirectory` are enabled by default.
+- `save-workspace-protocol` is set to `rolling` by default.
+- `resolution-mode` is set to `lowest-direct` by default.
+- Lockfile v6.
+- A lockfile is also generated if project has no dependencies.
