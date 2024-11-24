@@ -13,6 +13,7 @@ const projects: {
   { name: 'ESLint', value: 'eslint' },
   { name: 'Mongoose', value: 'mongoose' },
   { name: 'pnpm', value: 'pnpm' },
+  { name: 'Others', value: 'others' },
 ]
 
 export default function PrimaryLayout({ children }: { children: React.ReactNode }) {
